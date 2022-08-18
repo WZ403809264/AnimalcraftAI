@@ -1,0 +1,220 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_APPICON             ICON    DISCARDABLE     "RES\\Games.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BOARD               BITMAP  DISCARDABLE     "RES\\background.BMP"
+IDB_TRAP                BITMAP  DISCARDABLE     "RES\\trap.BMP"
+IDB_DEN                 BITMAP  DISCARDABLE     "RES\\den.BMP"
+IDB_SELECTED            BITMAP  DISCARDABLE     "RES\\SELECTED.BMP"
+IDB_RE                  BITMAP  DISCARDABLE     "RES\\elephant.BMP"
+IDB_RL                  BITMAP  DISCARDABLE     "RES\\lion.BMP"
+IDB_RT                  BITMAP  DISCARDABLE     "RES\\tiger.BMP"
+IDB_RP                  BITMAP  DISCARDABLE     "RES\\leopard.BMP"
+IDB_RW                  BITMAP  DISCARDABLE     "RES\\wolf.BMP"
+IDB_RD                  BITMAP  DISCARDABLE     "RES\\dog.BMP"
+IDB_RC                  BITMAP  DISCARDABLE     "RES\\cat.BMP"
+IDB_RM                  BITMAP  DISCARDABLE     "RES\\mouse.BMP"
+IDB_BE                  BITMAP  DISCARDABLE     "RES\\elephant - 副本.BMP"
+IDB_BL                  BITMAP  DISCARDABLE     "RES\\lion - 副本.BMP"
+IDB_BT                  BITMAP  DISCARDABLE     "RES\\tiger - 副本.BMP"
+IDB_BP                  BITMAP  DISCARDABLE     "RES\\leopard - 副本.BMP"
+IDB_BW                  BITMAP  DISCARDABLE     "RES\\wolf - 副本.BMP"
+IDB_BD                  BITMAP  DISCARDABLE     "RES\\dog - 副本.BMP"
+IDB_BC                  BITMAP  DISCARDABLE     "RES\\cat - 副本.BMP"
+IDB_BM                  BITMAP  DISCARDABLE     "RES\\mouse - 副本.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_START               WAVE    DISCARDABLE     "RES\\start.wav"
+IDR_MOUSE               WAVE    DISCARDABLE     "RES\\MOUSE.wav"
+IDR_CAT                 WAVE    DISCARDABLE     "RES\\CAT.wav"
+IDR_DOG                 WAVE    DISCARDABLE     "RES\\DOG.wav"
+IDR_WOLF                WAVE    DISCARDABLE     "RES\\WOLF.wav"
+IDR_LEOPARD             WAVE    DISCARDABLE     "RES\\LEOPARD.wav"
+IDR_TIGER               WAVE    DISCARDABLE     "RES\\TIGER.wav"
+IDR_LION                WAVE    DISCARDABLE     "RES\\LION.wav"
+IDR_ELEPHANT            WAVE    DISCARDABLE     "RES\\ELEPHANT.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDM_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "我先走(&R)",                  IDM_FILE_RED
+        MENUITEM "电脑先走(&B)",                IDM_FILE_BLACK
+        MENUITEM "单机练习(&T)",                IDM_FILE_TRAINING
+        MENUITEM SEPARATOR
+        MENUITEM "标准(&S)",                    IDM_STANDARD
+        MENUITEM "让虎攻防(&H)",                IDM_HANDICAP
+        MENUITEM "从剪贴板输入FEN(&I)",         IDM_LOADFEN
+        MENUITEM "输出FEN至剪贴板(&O)",         IDM_OUTPUTFEN
+        MENUITEM SEPARATOR
+        MENUITEM "悔棋(&U)",                    IDM_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "电脑分析(&A)",                IDM_ANALYZE
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    IDM_FILE_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ANALYZE_DIALOG DIALOG DISCARDABLE  0, 0, 208, 36
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "分析窗口"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "",IDC_EDIT1,3,4,201,25
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,0,0
+ PRODUCTVERSION 0,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "Comments", "AnimalcraftAI\0"
+            VALUE "CompanyName", "github.com\\WZ403809264\\animalcraft\0"
+            VALUE "FileDescription", "AnimalcraftAI\0"
+            VALUE "FileVersion", "1.5\0"
+            VALUE "InternalName", "AnimalcraftAI\0"
+            VALUE "LegalCopyright", "(C) 2020-2022 github.com\\WZ403809264\\animalcraft\0"
+            VALUE "LegalTrademarks", "github.com\\WZ403809264\\animalcraft\0"
+            VALUE "OriginalFilename", "AnimalcraftAI.EXE\0"
+            VALUE "ProductName", "AnimalcraftAI\0"
+            VALUE "ProductVersion", "1.5\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ANALYZE_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 35
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
